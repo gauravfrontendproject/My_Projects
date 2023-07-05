@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TsGlIbkff0L2_QBf4EqDi9fbzBCBh42qsw&usqp=CAU">
+    <title>Survey Form</title>
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        body {
+            background-color: yellowgreen;
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+            font-family: "Trirong", serif;
+        }
+
+
+        .form {
+            max-width: 100%;
+            margin: 20px;
+            border: 2px solid yellow;
+            padding: 20px;
+            background-image: url('https://live.staticflickr.com/7904/47346851571_e45bfd7450_b.jpg');
+            background-size: cover;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration form</h1><br>
+    <div class="form">
+
+        <form action="#" method="post">
+
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Enter Your Name" required="">
+            <br><br>
+            <label for="email_id">Email</label><br>
+            <input type="email" placeholder="test@gmail.com" required>
+            <br><br>
+            <label for="roll">Roll No.</label><br>
+            <input type="number" placeholder="roll" min="1" max="100">
+            <br><br>
+            <label for="courserate">How do you rate our courses?</label><br>
+            <select name="courserate">
+
+                <option value="select">-select-</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Better">Better</option>
+                <option value="Good">Good</option>
+                <option value="Worse">Worse</option>
+            </select>
+            <br><br>
+            <label for="topic">Your Favourite Topic in HTML</label><br>
+            <input type="checkbox" name="topic1" value="Structure Element">Structure Element <br>
+            <input type="checkbox" name="topic2" value="Links and List">Links and List <br>
+            <input type="checkbox" name="topic3" value="HTML Media">HTML Media <br>
+            <input type="checkbox" name="topic4" value="HTML Table">HTML Table <br>
+            <input type="checkbox" name="topic4" value="Grouping Elements">Grouping Elements <br>
+            <input type="checkbox" name="topic5" value="Forms">Forms <br>
+            <br><br>
+
+            <label for="course">Do you like the HTML course?</label> <br>
+            <input type="radio" name="course" value="yes">Yes
+            <input type="radio" name="course" value="no">No
+            <br><br>
+
+            <label for="description">Few words about course</label><br>
+            <textarea cols="50" rows="5"></textarea>
+            <br><br>
+
+            <button onclick="SubmittedSucessfully()">Submit</button>
+            <button onclick="resetall()">Reset</button>
+
+            <!--<input type="submit" value="Submit">-->
+
+
+        </form>
+    </div>
+</body>
+
+</html>

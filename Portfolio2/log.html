@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Log In</title>
+  <link rel="icon"
+    href="https://flyclipart.com/thumb2/user-profile-avatar-login-account-png-icon-free-download-935697.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      outline: none;
+    }
+
+    body {
+      background-image: url("https://live.staticflickr.com/7904/47346851571_e45bfd7450_b.jpg");
+      background-size: cover;
+      /*overflow-x: scroll; */
+    }
+
+
+    section {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .form {
+      padding: 30px;
+      text-align: center;
+      border: 3px solid lightblue;
+      background-color: grey;
+    }
+
+    h2 {
+      font-family: "Sofia", sans-serif;
+      font-style: bold;
+      font-weight: normal;
+    }
+
+    button {
+      background-color: lightyellow;
+      font-size: 15px;
+      padding: 5px;
+      border: 1px solid blue;
+    }
+
+
+    /* unvisited link */
+    a:link {
+      color: red;
+      text-decoration: none;
+    }
+
+    /* visited link */
+    a:visited {
+      color: green;
+
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+      text-decoration: underline;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+      text-decoration: underline;
+    }
+
+
+    .link {
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <div class="form">
+      <h2>Sign in</h2><br>
+      <form action="#" target="_blank">
+        <label for="login" style="font-size:20px;">Username:</label>
+        <input type="email" id="email" name="email" required="" placeholder="Email ID">
+        <br><br>
+        <label for="password" style="font-size:20px;">Password:</label>
+        <input type="password" id="password" name="password" required="" placeholder="Enter Your Password">
+        <br><br>
+
+        <button type="submit" onclick="alert('Login Sucessfully!')">Login
+        </button>
+        <button type="reset" onclick="alert('Reset All')">Reset
+        </button>
+        <br><br>
+        <div class="link">
+          <a href="ChangePassword.html">Forget Password?</a>&nbsp;
+          <a href="form.html" target="_blank">Create new account</a>
+        </div>
+
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
